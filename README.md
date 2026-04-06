@@ -1,11 +1,11 @@
 # 🎓 College Event Registration System
 
-A modern, full-stack web application designed for seamless student registration for university events. This project features a clean, aesthetic user interface and a robust backend connected to a MySQL database.
+A modern, full-stack web application designed for seamless student registration for university events. This project features a clean user interface and a robust backend connected to a MySQL database.
 
 ---
 
 ## 🚀 Features
-* **Aesthetic UI:** Minimalistic design with smooth transitions and responsive layout.
+* **Clean UI:** Minimalistic design with smooth transitions and responsive layout.
 * **Real-time Interactivity:** Uses JavaScript Fetch API to submit data without page reloads.
 * **Automated Database Management:** Backend automatically generates necessary SQL tables on first run.
 * **Admin Panel:** A protected view to monitor all student registrations in a tabular format.
@@ -13,8 +13,8 @@ A modern, full-stack web application designed for seamless student registration 
 ---
 
 ## 🛠️ Technology Stack
-* **Frontend:** HTML5, CSS3, JavaScript (ES6)
-* **Backend:** Python 3.x, Flask Framework
+* **Frontend:** HTML5, CSS3, JavaScript
+* **Backend:** Python 3.14, Flask Framework
 * **Database:** MySQL (Relational Database)
 * **ORM:** SQLAlchemy (Object Relational Mapper)
 * **Server:** XAMPP (Apache & MySQL)
@@ -32,15 +32,14 @@ To build this project from scratch, the following methodology was followed:
 ### Phase 2: Database Modeling
 * Configured a local MySQL server using **XAMPP**.
 * Designed a `Registration` model in Python to define the database schema (Fields: Name, ID, Course, Event).
-* Implemented `db.create_all()` logic to ensure the application is "Plug-and-Play" for other developers.
 
 ### Phase 3: Backend Logic (API)
-* Created a `POST` route (`/register`) to handle incoming JSON data.
+* Created a `POST` route (`/register`) to handle incoming data.
 * Implemented error handling to prevent application crashes during database downtime.
 * Developed the `/admin` route to query the database and pass record sets to the frontend.
 
 ### Phase 4: Frontend Design & UX
-* Developed a "Minimalist-First" CSS stylesheet focusing on typography and white space.
+* Developed a CSS stylesheet focusing on typography and white space.
 * Integrated **JavaScript** to intercept form submissions, allowing for a "Single Page Application" feel by updating the UI dynamically upon success.
 
 ---
@@ -50,7 +49,7 @@ To build this project from scratch, the following methodology was followed:
 Follow these steps to run the project locally:
 
 ### 1. Prerequisites
-* Install [Python 3.10+](https://www.python.org/)
+* Install [Python 3.14](https://www.python.org/)
 * Install [XAMPP](https://www.apachefriends.org/)
 
 ### 2. Database Configuration
