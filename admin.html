@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - Registrations</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #764ba2; color: white; }
+        .admin-container { max-width: 800px; margin: 50px auto; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Registered Students</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Student ID</th>
+                <th>Course</th>
+                <th>Event</th>
+            </tr>
+            {% for reg in registrations %}
+            <tr>
+                <td>{{ reg.id }}</td>
+                <td>{{ reg.full_name }}</td>
+                <td>{{ reg.student_id }}</td>
+                <td>{{ reg.course }}</td>
+                <td>{{ reg.event_name }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <a href="/" style="color: #764ba2; text-decoration: none;">← Back to Registration</a>
+    </div>
+</body>
+</html>

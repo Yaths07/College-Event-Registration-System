@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="form-card">
+        <h2>Event Registration</h2>
+        <form id="regForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="sid" placeholder="Student ID" required>
+            <input type="text" id="course" placeholder="Course" required>
+            
+            <select id="event" required>
+                <option value="" disabled selected>Select an Event</option>
+                <option value="Tech Fest">Tech Fest</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Cultural">Cultural Event</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="msg"></p> 
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
